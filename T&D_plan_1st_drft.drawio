@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="9ZXhfX5anmOUlw8hG-in">
+    <mxGraphModel dx="2954" dy="1144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-2" value="Player Character" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="210" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-3" value="-combat_class (Wizard, Ranger, etc)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RXnEcm6IaP-4wpzgMX5O-2">
+          <mxGeometry x="-10" y="20" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-11" value="+Can Pick up Items" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RXnEcm6IaP-4wpzgMX5O-2">
+          <mxGeometry x="-10" y="110" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RXnEcm6IaP-4wpzgMX5O-2" target="RXnEcm6IaP-4wpzgMX5O-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="200" as="sourcePoint" />
+            <mxPoint x="145" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-32" value="Collision" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RXnEcm6IaP-4wpzgMX5O-31">
+          <mxGeometry x="-0.04" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-7" value="Item Pickups" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="460" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-9" value="*" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="RXnEcm6IaP-4wpzgMX5O-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="200" as="sourcePoint" />
+            <mxPoint x="200" y="327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.795;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RXnEcm6IaP-4wpzgMX5O-7" target="RXnEcm6IaP-4wpzgMX5O-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="200" as="sourcePoint" />
+            <mxPoint x="90" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.595;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RXnEcm6IaP-4wpzgMX5O-7" target="RXnEcm6IaP-4wpzgMX5O-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="200" as="sourcePoint" />
+            <mxPoint x="130" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-23" value="+Spawn on map randomly" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RXnEcm6IaP-4wpzgMX5O-7">
+          <mxGeometry y="28" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-33" value="+Spawn higher tiers futher&amp;nbsp;&lt;div&gt;into match?&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RXnEcm6IaP-4wpzgMX5O-7">
+          <mxGeometry y="60" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-10" value="Buffs" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="790" width="205" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-25" value="+Overall buffs like temporary shield/&lt;div&gt;improved mobility/etc&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RXnEcm6IaP-4wpzgMX5O-10">
+          <mxGeometry x="-5" y="28" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-13" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Feature Ideas:&lt;/h1&gt;&lt;div&gt;1.) Should mana &lt;b&gt;&lt;u&gt;A)&lt;/u&gt;&amp;nbsp;&lt;/b&gt;regenerate, or &lt;b&gt;&lt;u&gt;B)&lt;/u&gt;&lt;/b&gt; be a pickup (like ammo) or &lt;b style=&quot;text-decoration-line: underline;&quot;&gt;C)&lt;/b&gt;&amp;nbsp;Both&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.) Should spells be &lt;b&gt;&lt;u&gt;A)&lt;/u&gt;&lt;/b&gt; predetermined by class/build, or &lt;u&gt;&lt;b&gt;B)&lt;/b&gt;&lt;/u&gt;&amp;nbsp;Start with a default pickup spells on map or &lt;u style=&quot;font-weight: bold;&quot;&gt;C)&lt;/u&gt;&amp;nbsp;build class in lobby and pickup upgrades on the map&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3.) Should the game implement guns or should we save that for another game? They would obviously have to be balanced with other classes&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4.) Should the game include AI fighting everyone while we fight eachother?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5.) other suggestions please &amp;amp; thx&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="830" y="70" width="260" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-15" value="Spells" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="790" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-24" value="+Upgrades to class spells" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RXnEcm6IaP-4wpzgMX5O-15">
+          <mxGeometry x="15" y="28" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-19" value="Arrows/ammo" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="530" y="790" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-20" value="Melee weapons" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="780" y="790" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="RXnEcm6IaP-4wpzgMX5O-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="660" as="sourcePoint" />
+            <mxPoint x="670" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-30" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;u&gt;Fantasy Style &quot;Arena Shooter&quot; Game Idea #1 First Draft&lt;/u&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;//We are going to make a game for fun and game dev experience, anyone who wants to participate in the design and development is welcome to join us.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;//This is a first draft of a rough design idea, it will be changed and can be completely scrapped if needed.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="30" width="650" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-36" value="Game Structure" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="210" width="200" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="RXnEcm6IaP-4wpzgMX5O-37" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Arena &quot;Shooter&quot;&lt;/h1&gt;&lt;div&gt;Spawn in map and proceed to pickup items/buffs while engaging in free for all combat.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Arena size can be large or small&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Have AI/NPC fighting in the battle as well to make it more exciting and give experience coding/designing game AI&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="RXnEcm6IaP-4wpzgMX5O-36">
+          <mxGeometry y="20" width="200" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
